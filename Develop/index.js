@@ -16,6 +16,29 @@ const questions = [
         name: 'projectDescription',
         message: 'Please enter a description of the project:'
     },
+    //Project languages
+    {
+        type: 'checkbox',
+        name: 'projectLanguages',
+        message: "Select all tools used:",
+        choices: [
+            {
+                name: 'HTML',
+            },
+            {
+                name: 'CSS',
+            },
+            {
+                name: 'Bootstrap',
+            },
+            {
+                name: 'Node.js',
+            },
+            {
+                name: 'jquery',
+            },
+        ]
+    },
     // Project Installation
     {
         type: 'input',
@@ -50,7 +73,11 @@ const questions = [
 ];
 
 // function to write README file
-function writeToFile(fileName, data) {
+function writeToFile(data) {
+    fs.writeFile('./README.md', data, err => {
+        if (err) throw err;
+        console.log("File Created!")
+    })
 }
 
 // function to initialize program
@@ -60,6 +87,9 @@ const init = () => {
 
 // function call to initialize program
 init()
-    .then(data => console.log(data))
-    .then(generateMarkdown(data))
-    .then(markdown => console.log(markdown))
+    .then(data => {
+        return generateMarkdown(data)
+    })
+    .then(markdown => {
+        writeToFile(markdown)
+    })
