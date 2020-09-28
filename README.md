@@ -1,18 +1,32 @@
-# lkaSJHFALSDKJFL
+# README Generator
 ## Description
-;LAKSJDF;LKASJDF
+This program will create a readme.md file for a user based off of their answers to several questions.  
+
+A user will need to answer the following questions:
+1. Project Name
+2. Project Description
+3. Select all used tools/languages (you can select multiple)
+4. Provide Installation Instructions
+5. Usage Details
+6. License Type (Drop down)
+7. Contributors
+8. Testing Details
+9. Your First and Last Name
+10. Your Github username
+11. Your email address
 
 ## Languages
-HTML
+* node.js
+* github markdown
 
 ## Installation
-A;LSDKFJ;ALSDJK
+You will need to install the inquirer package using npm.
 
 ## License
 MIT License
 
 ## Contributors
-;ALSDKJ;ALSDJK
+Jacob Wilde - Developer
 
-## Tests
-;LASDKJF;LASKDJF
+## Questions
+All question should be directed to me at https://github.com/jacobwilde378.
