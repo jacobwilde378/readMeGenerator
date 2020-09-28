@@ -1,6 +1,9 @@
-# My First Test Project
+# My Test Application
 ## Description
-This is a test of functionality
+This is a detailed introduction
+
+## Badges
+
 
 ## Languages
 HTML,CSS,Bootstrap,Node.js,jquery
@@ -12,7 +15,15 @@ You will need to install the inquirer package.
 MIT License
 
 ## Contributors
-Jacob Wilde, jacobwilde378, jacob.wilde@utah.edu
+First & Last Name
+Jacob Wilde
 
 ## Tests
-No testing was done.
+No testing details
+
+## Questions
+Any questions should be directed to undefined.
+
+Github Username:  jacobwilde378
+
+Email:  jacob.wilde@utah.edu

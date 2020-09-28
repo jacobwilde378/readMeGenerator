@@ -62,13 +62,29 @@ const questions = [
     {
         type: 'input',
         name: 'projectContribution',
-        message: 'Please list all contributors i.e("user name", "github userid", email address) '
+        message: 'Please list all contributors (First & Last Name):'
     },
     // Project Tests
     {
         type: 'input',
         name: 'projectTests',
-        message: "Please enter testing details"
+        message: "Please enter testing details:"
+    },
+    //Project Questions
+    {
+        type:  'input',
+        name: 'projectUserName',
+        message: 'Please enter your first and last name:'
+    },
+    {
+        type: 'input',
+        name: 'projectGithubUN',
+        message: 'Please enter your github username:'
+    },
+    {
+        type:  'input',
+        name: 'projectEmail',
+        message: 'Please enter your email address:'
     }
 ];
 
