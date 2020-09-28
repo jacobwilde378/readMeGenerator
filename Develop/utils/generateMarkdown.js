@@ -1,8 +1,6 @@
-// create badges for languages
-
 // function to generate markdown for README
 function generateMarkdown(data) {
-var badgeLink = ""
+  var badgeLink = ""
   if (data.projectLicense === 'MIT License') {
     var badgeLink = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
   } else if (data.projectLicense === 'Apache License') {
@@ -10,27 +8,33 @@ var badgeLink = ""
   } else if (data.projectLicense === 'GPL License') {
     var badgeLink = '[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)'
   }
-var crap = "* link one\r* link two"
-
   return `# ${data.projectTitle}
 ## Description
 ${data.projectDescription}
 
-## Badges
-* ${badgeLink}  
-* ![Image of HMTL Icon](./src/badges/html.png)
+## Table of Contents
+1. [Badges](#Badges)
+2. [Languages/Tools](#Languages/Tools)
+3. [Installation](#Installation)
+4. [License](#License)
+5. [Tests](#Tests)
+6. [Questions](#Questions)
 
-## Languages / Tools
+
+## Badges
+
+${badgeLink}  
+
+## Languages/Tools
 ${data.projectLanguages}
 
 ## Installation
 ${data.projectInstallation}
 
 ## License
-${data.projectLicense}
+This project is covered under the following license:  ${data.projectLicense}
 
 ## Contributors
-First & Last Name
 ${data.projectContribution}
 
 ## Tests
@@ -39,7 +43,7 @@ ${data.projectTests}
 ## Questions
 Any questions should be directed to ${data.projectUserName}.
 
-Github Username:  ${data.projectGithubUN}
+Github:  https://github.com/${data.projectGithubUN}
 
 Email:  ${data.projectEmail}
 `;

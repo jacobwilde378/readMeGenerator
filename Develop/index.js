@@ -72,7 +72,7 @@ const questions = [
     },
     //Project Questions
     {
-        type:  'input',
+        type: 'input',
         name: 'projectUserName',
         message: 'Please enter your first and last name:'
     },
@@ -82,7 +82,7 @@ const questions = [
         message: 'Please enter your github username:'
     },
     {
-        type:  'input',
+        type: 'input',
         name: 'projectEmail',
         message: 'Please enter your email address:'
     }
