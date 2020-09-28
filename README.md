@@ -22,6 +22,8 @@ A user will need to answer the following questions:
 ## Installation
 You will need to install the inquirer package using npm.
 
+Demo:  https://drive.google.com/file/d/1cEUBhc-xGfkY7P7SZulYCL5EbfbZOeC7/view
+
 ## License
 MIT License
 
