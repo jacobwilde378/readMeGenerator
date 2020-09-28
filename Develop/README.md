@@ -1,29 +1,30 @@
-# My Test Application
+# 
 ## Description
-This is a detailed introduction
+
 
 ## Badges
+* [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)  
+* ![Image of HMTL Icon](./src/badges/html.png)
 
+## Languages / Tools
 
-## Languages
-HTML,CSS,Bootstrap,Node.js,jquery
 
 ## Installation
-You will need to install the inquirer package.
+
 
 ## License
 MIT License
 
 ## Contributors
 First & Last Name
-Jacob Wilde
+
 
 ## Tests
-No testing details
+
 
 ## Questions
-Any questions should be directed to undefined.
+Any questions should be directed to .
 
-Github Username:  jacobwilde378
+Github Username:  
 
-Email:  jacob.wilde@utah.edu
+Email:  

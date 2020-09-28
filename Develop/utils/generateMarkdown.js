@@ -1,23 +1,26 @@
+// create badges for languages
+
 // function to generate markdown for README
 function generateMarkdown(data) {
-
-    if (data.projectLicense === 'MIT License') {
-      let badgeLink = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
-    } else if (data.projectLicense === 'Apache License') {
-      let badgeLink = '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
-    } else if(data.projectLicense === 'GPL License') {
-      let badgeLink = '[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)'
-    }
-
+var badgeLink = ""
+  if (data.projectLicense === 'MIT License') {
+    var badgeLink = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
+  } else if (data.projectLicense === 'Apache License') {
+    var badgeLink = '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
+  } else if (data.projectLicense === 'GPL License') {
+    var badgeLink = '[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)'
+  }
+var crap = "* link one\r* link two"
 
   return `# ${data.projectTitle}
 ## Description
 ${data.projectDescription}
 
 ## Badges
-${badgeLink}
+* ${badgeLink}  
+* ![Image of HMTL Icon](./src/badges/html.png)
 
-## Languages
+## Languages / Tools
 ${data.projectLanguages}
 
 ## Installation
